@@ -1,0 +1,202 @@
+
+.wear .header{ 
+	background-color: #111;
+}
+.wear .header .container>span{
+	display: inline-block;
+	color: #fff;
+	padding: 58px 0px;
+}
+.wear .header .container input[type="checkbox"]{
+	display: none;
+}
+.wear .header .container label{
+	display: none;
+	float: right;
+}
+.wear .header .container label span{
+	display: block;
+	background-color: #fff;
+	width: 30px;
+	height: 3px;
+	margin-top: 5px;
+}
+
+.wear .header .nav{
+	float: right;
+}
+.wear .header .nav a{
+	display: inline-block;
+	color: #fff;
+	padding: 60px 10px 22px 10px;
+	border-bottom: 3px solid #292929;
+	margin-left: 10px;
+	font-size: 14px;
+}
+/*content*/
+.wear .content{
+	background-color: #111;
+	padding-top: 165px;
+	text-align: center;
+}
+.wear .content h1{
+	font-size: 44px;
+	color: #999999;
+	text-transform: uppercase;
+}
+.wear .content h1 span{
+	color: #fcac45;
+}
+.wear .content p{
+	font-size: 20px;
+	color: #fff;
+	line-height: 24px;
+}
+.wear .content img{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius:50%;
+	margin: 280px 0px 88px 0px;
+}
+/*about us*/
+.wear .about .img{
+	padding: 100px 0px;
+	width: 50%;
+	display: inline-block;
+}
+.wear .about .letter{
+
+}
+.wear .about .img img{
+	width: 100%;
+	height: 100%;
+}
+.wear .about .letter{
+	width: 50%;
+	float: right;
+	padding-top: 100px;
+}
+.wear .about .letter h3{
+	font-size: 20px;
+	color: #636363;
+}
+.wear .about .letter h1{
+	padding-bottom: 40px;
+	font-size: 34px;
+	color: #222222;
+}
+.wear .about .letter p{
+	font-size: 18px;
+	color: #6c6c6c;
+	line-height: 25px;
+	padding-bottom: 20px;
+}
+.wear .about .letter span{
+	padding-left: 23px;
+	font-size: 16px;
+	display: block;
+	line-height: 25px;
+	color: #5a5a5a;
+	background-image: url(../images/about_ul_bg.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.wear .about .letter a{
+	display: inline-block;
+	font-size: 12px;
+	color: #616161;
+	border: 1px solid #616161;
+	width: 194px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	border-radius: 5px;
+	background-image: url(../images/about_btn.png);
+	background-repeat: no-repeat;
+	background-position: 22px center;
+	margin-top: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+	.container{
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 1200px){
+	.container{
+		width: 970px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 997px){
+	.container{
+		width: 750px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		display:block;
+		width: auto;
+		margin: 0 auto;
+	}
+	.wear .header .container label{
+		display: block;
+		margin: 50px 20px 0px 0px;
+	}
+	.wear .header .nav{
+		display: none;
+	}
+	.wear .header .nav a{
+		padding: 30px 10px 22px 10px;
+		width: 100%;
+		text-align: center;
+	}
+	#button:checked~.nav{
+		display: inline-block;
+	}
+	#button:checked~label{
+		transform:rotateZ(90deg);
+		transition:all .3s linear;
+	}
+	label{
+		transform:rotateZ(0deg);
+		transition:transform .3s linear;
+	}
+	.wear .header .container>span{
+		margin-left: 20px;
+	}
+	.wear .about .img{
+		display: none;
+	}
+	.wear .about .letter{
+		width: 80%;
+	}
+}
+
+
+
